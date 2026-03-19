@@ -1,19 +1,18 @@
-Trajectory|Synthesis|Model|Utrained
+Post Divergence Trajectory Synthesis Model Seed Module
 
-A lightweight probabilistic trajectory model.  Tracks low entropy motion paths through synthetic environments.
+A lightweight probabilistic trajectory model.  Tracks low entropy motion paths through synthetic environments. This instance is used to replicate and recreated seeds based off intial conditions.  The output from the selected seed is the models base state.  based on the type of event which occurs when the seed was ran.  Gives insights into possible use case.  Secondary function: used as a calibration tool when changes cause catastrophic failure. (this instance is not tuned to solve trajectories, but a calibration tool to be used in conjunction with Anneal V1 and beyond.
 
 
-Main
+Main:
 
 Minimal neural skeleton capable of representing complex trajectory divergence using, branch based latent representations. 
 Designed for research, experimentation, and forward exploration.
 
 
-Features
-
+Features:
 
 Ultra-lightweight
-suitable for low resource, rapid iteration.
+suitable for low resource, rapid iteration, zero issues running on CPU, GPU, Clusters. Legacy hardware included.
 
 Branching superposition
 Multi branch latent trajectories allow modeling divergence and uncertainty without large attention mechanisms.
@@ -49,7 +48,7 @@ Add ZLUDA DLLs to your system PATH
 
 Notes
 
-•The model is a skeleton, zero training. 
+•The model is a skeleton, though the model is Tuned.  The tuning is not there to solve anything.  Meant to be used in conjunction with ANNEAL V1 and beyond for calibration. 
 
 •Forward pass demonstrates latent motion propagation.
 
